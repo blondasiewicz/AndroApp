@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bartek.myapplication.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hello World!"
+            android:padding="10dp"
+            android:gravity="center"/>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+			android:gravity="center">
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:gravity="center">
+                <Button
+                    android:id="@+id/Button1"
+                    android:layout_margin="10dp"
+                    android:padding="5dp"
+                    android:text="przycisk 1"
+                    />
+                <Button
+                    android:id="@+id/Button2"
+                    android:layout_margin="10dp"
+                    android:padding="5dp"
+                    android:text="przycisk 2"/>
+                <Button
+                    android:id="@+id/Button3"
+                    android:layout_margin="10dp"
+                    android:padding="5dp"
+                    android:text="przycisk 3"/>
+
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:padding="10dp"
+                    android:text="First Name:"/>
+                <EditText
+                    android:padding="10dp"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:padding="10dp"
+                    android:text="Surname: "/>
+                <EditText
+                    android:padding="10dp"/>
+            </TableRow>
+            <TableRow
+                android:gravity="center">
+                <Button
+                    android:gravity="center"
+                    android:text="Submit"/>
+            </TableRow>
+            <TableRow>
+
+                <TextView
+
+                    android:id="@+id/textView"
+                    android:textColor="#F50"
+                    android:textSize="45dp" />
+            </TableRow>
+        </TableLayout>
+
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
